@@ -1,0 +1,314 @@
+body {
+    font-family: Inter;
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+.header-wrapper {
+    max-width: 1245px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.header-left {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    align-items: center;
+}
+.left-links{
+    display: flex;
+    justify-content: space-between;
+    gap: 26px;
+    font-size: 14px;
+    font-weight: 300;
+}
+.right-link{
+    padding: 14px 24px;
+    background-color: #DD7979;
+    color: #fff;
+    border-radius: 10px;
+    display: inline-block;
+}
+.left-links > a{
+    color: #744343;
+}
+.intro{
+    position: relative;
+    margin: 0 auto;
+    background-color: #FFF4F4;
+    text-align: center;
+    align-items: center;
+}
+.intro-heading { 
+    position: relative;
+    margin: 0 auto;
+    font-weight: 400;
+    color: #744343;
+    font-size: 48px;
+    margin-top: 9px;
+    margin-bottom: 34px;
+}
+h1 {
+    color: #DD7979;
+    font-size: 12px;
+    font-weight: 200;
+    padding-top: 135px;
+}
+.intro-content {
+    position: relative;
+    color: #967272;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 57px;
+}
+.into-btn-left {
+    position: relative;
+    padding: 14px 39px 18px 40px;
+    background-color: #DD7979;
+    color: #fff;
+    border-radius: 10px;
+    margin-right: 6px;
+}
+.into-btn-right {
+    position: relative;
+    padding: 16px 26px;
+    background-color: #ffffff;
+    color: #744343;
+    border-radius: 10px;
+    border: solid #ff1a1f 2px;
+}
+.logo-btns{
+    display: flex;
+    gap: 15px;
+    text-align: center;
+}
+.intro-wrapper {
+    height: 800px;
+    width: 100%;
+    position: relative;
+}
+#img-bottom {
+    position: absolute;
+    bottom: 0px;
+    left: 40px;
+}
+#img-top {
+    position: absolute;
+    top: 0px;
+    right: 0;
+}
+.news-wrapper {
+    background-color: #DD7979;
+    border-radius: 25px;
+    padding-bottom: 120px;
+
+
+}
+#news-img{
+    position: relative;
+    top: -170px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    margin: 0 auto;
+    width: 35%;
+    border-radius: 25px;
+    height: 218px;
+    text-align: center;
+}
+.news-components-number {
+    color: #744343;
+    font-size: 40px;
+}
+.news-components-heading{
+    color: #DD7979;
+    font-size: 18px;
+}
+.layouts-wrapper {
+    background-color: #FFF4F4;
+    background-image:url("/images/layouts-background.png");
+
+    padding-top: 120px;
+}
+.layouts {
+    text-align: center;
+
+}
+.layouts-heading {
+    font-size: 48px;
+    color: #744343;
+    margin-bottom: 70px;
+}.layouts-text {
+    font-size: 12;
+    color: #DD7979;
+}
+.what-you-get-wrapper {
+    text-align: center;
+    padding-top: 120px;
+
+   
+}
+.what-you-get-cards {
+    display: grid;
+    grid-template-columns: 3fr  3fr 3fr;
+    grid-template-rows: 2fr 2fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+}
+.card-1 {
+    background-image: url('../images/what-you-get-img/img-1.png');
+}
+.card-2 {
+    background-image: url('../images/what-you-get-img/img-2.png');
+}
+.card-3 {
+    background-image: url('../images/what-you-get-img/img-3.png');
+}
+.card-4 {
+    background-image: url('../images/what-you-get-img/img-4.png');
+}
+.card-5 {
+    background-image: url('../images/what-you-get-img/img-5.png');
+}
+.card-6 {
+    background-image: url('../images/what-you-get-img/img-6.png');
+}.card{
+    margin: auto;
+    width: 373px;
+    height: 252px;
+    text-align: start;
+    border-radius: 20px;
+    display: inline;
+    margin-top: 40px;
+    box-shadow: 1px 5px 10px 0.4px lightslategrey;
+    
+
+}
+.cards-text{
+    margin: 40px 0px 0 30px;
+    color: #967272;
+    font-size: 16px;
+}
+.cards-heading{
+    margin: 40px 0px 0 30px;
+    color: #744343;
+    font-size: 18px;
+}
+.what-you-get-heading-top {
+    color: #DD7979;
+    font-size: 12px;
+    font-weight: 300;
+}
+.what-you-get-heading-bottom {
+    color: #744343;
+    font-size: 48px;
+    font-weight: 400;
+
+}
+.portfolio { 
+    background-image: url('../images/portfolio-background.png');
+    background-color: #FFF4F4;
+    padding-bottom: 220px;
+}
+.portfolio-wrapper {
+    padding-top: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 16px;
+}
+.portfolio-element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #744343;
+    width: 370px;
+    height: 106px;
+    background-color: #ffffff;
+}
+.portfolio-element-long {
+    width: 570px;
+}
+#news-letter-img-top{
+    position: absolute;
+    bottom: -51px;
+    right: 155px;
+}
+#news-letter-img-bottom{
+    position: absolute;
+    top: 55px;
+    left: 76px;
+}
+.news-letter {
+    text-align: center;
+
+}
+.news-letter-wrapper {
+}
+.news-letter-mini-heading {
+    font-size: 16px;
+    color: #DD7979;
+    letter-spacing: 0.1rem;
+    font-weight: 200;
+}
+.news-letter-heading {
+    color: #744343;
+    font-size: 48px;
+    font-weight: 400;
+}
+.email {
+    width: 600px;
+    height: 60px;
+    border: #FFBABA solid 2px;
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    color: #C4C4C4;
+    font-style: bold;
+    letter-spacing: 5px; 
+    margin-top: 136px;
+    font-size: 12px;
+}
+.start {
+    width: 600px;
+    height: 60px;
+    border-radius: 10px;
+    margin: auto;
+    background-color: #DD7979;
+    color: #C4C4C4;
+    font-weight: 800;   
+    font-size: 12px;
+    letter-spacing: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+.newsletter-bottom-text {
+    font-size: 14px;
+    color: #744343;
+}
+.newsletter-bottom-text-bold {
+    font-style: bold;
+}
