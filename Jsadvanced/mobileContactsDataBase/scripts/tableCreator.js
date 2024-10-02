@@ -65,7 +65,13 @@ export default client => {
         <input type="text" class="form-control" placeholder="${currentCLient.email}" aria-label="Username" aria-describedby="addon-wrapping">
         </div>
         `
+ 
         modalBody.appendChild(input)
+        const modal = document.getElementById('exampleModal');
+        modal.addEventListener('hidden.bs.modal', function () {
+        const modalBody = document.querySelector('.modal-body');
+        modalBody.innerHTML = ''; 
+        });
     })
     tableWrapper.appendChild(table) 
 
