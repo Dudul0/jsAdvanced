@@ -41,28 +41,28 @@ export default client => {
         input.innerHTML = 
         `
         <div class="input-group flex-nowrap"></div>
-        <span class="input-group-text" id="addon-wrapping">Name</span>
-        <input type="text" class="form-control" placeholder="${currentCLient.name}" aria-label="Username" aria-describedby="addon-wrapping">
+        <span class="input-group-text" id="addon-wrapping name">Name</span>
+        <input type="text" class="form-control" id="name" placeholder="${currentCLient.name}" aria-label="Username" aria-describedby="addon-wrapping">
         </div>
         
         <div class="input-group flex-nowrap"></div>
-        <span class="input-group-text" id="addon-wrapping">Surname</span>
-        <input type="text" class="form-control" placeholder="${currentCLient.surname}" aria-label="Username" aria-describedby="addon-wrapping">
+        <span class="input-group-text" id="addon-wrapping surname">Surname</span>
+        <input type="text" class="form-control" id="surname" placeholder="${currentCLient.surname}" aria-label="Username" aria-describedby="addon-wrapping">
         </div>
 
         <div class="input-group flex-nowrap"></div>
-        <span class="input-group-text" id="addon-wrapping">Birth date</span>
-        <input type="text" class="form-control" placeholder="${currentCLient.birthdate}" aria-label="Username" aria-describedby="addon-wrapping">
+        <span class="input-group-text" id="addon-wrapping birtDate">Birth date</span>
+        <input type="text" class="form-control" id="birthdate" placeholder="${currentCLient.birthdate}" aria-label="Username" aria-describedby="addon-wrapping">
         </div>
 
         <div class="input-group flex-nowrap"></div>
-        <span class="input-group-text" id="addon-wrapping">Number</span>
-        <input type="text" class="form-control" placeholder="${currentCLient.number}" aria-label="Username" aria-describedby="addon-wrapping">
+        <span class="input-group-text" id="addon-wrapping Number">Number</span>
+        <input type="text" class="form-control" id="number" placeholder="${currentCLient.number}" aria-label="Username" aria-describedby="addon-wrapping">
         </div>
 
         <div class="input-group flex-nowrap"></div>
-        <span class="input-group-text" id="addon-wrapping">Email</span>
-        <input type="text" class="form-control" placeholder="${currentCLient.email}" aria-label="Username" aria-describedby="addon-wrapping">
+        <span class="input-group-text" id="addon-wrapping email">Email</span>
+        <input type="text" class="form-control" id="email" placeholder="${currentCLient.email}" aria-label="Username" aria-describedby="addon-wrapping">
         </div>
         `
  
