@@ -54,7 +54,15 @@ export default client => {
         <span class="input-group-text" id="addon-wrapping birtDate">Birth date</span>
         <input type="text" class="form-control" id="birthdate" placeholder="${currentCLient.birthdate}" aria-label="Username" aria-describedby="addon-wrapping">
         </div>
-
+        <div class="input-group flex-nowrap"></div>
+        <span class="input-group-text" id="addon-wrapping birtDate">Sex</span>
+        <select class="form-select" id="sex" aria-label="Default select example">
+        <option value="male">male</option>
+        <option value="female">female</option>
+        <option value="kitty"> </option>
+        </select>
+        </div>
+        
         <div class="input-group flex-nowrap"></div>
         <span class="input-group-text" id="addon-wrapping Number">Number</span>
         <input type="text" class="form-control" id="number" placeholder="${currentCLient.number}" aria-label="Username" aria-describedby="addon-wrapping">
