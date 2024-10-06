@@ -59,7 +59,7 @@ export default client => {
         <select class="form-select" id="sex" aria-label="Default select example">
         <option value="male">male</option>
         <option value="female">female</option>
-        <option value="kitty"> </option>
+        <option value="kitty"> kitty </option>
         </select>
         </div>
         
