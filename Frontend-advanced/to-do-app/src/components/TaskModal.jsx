@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import React from 'react';
 import Form from 'react-bootstrap/Form';
+import { MdDone } from "react-icons/md";
 export default function TaskModal({show, handleClose}) {  
   return (
     <>
@@ -15,25 +16,60 @@ export default function TaskModal({show, handleClose}) {
       >
 
 
+
+         {/*  task name   */}
+
+        <Form>
         <Modal.Header closeButton>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-            <Form.Label>Email address</Form.Label>
-            <Form.Control type="text" placeholder="To establish a new nation" />
-         </Form.Group>
+          <Form.Group className="mb-3" controlId="formTaskName">
+            <Form.Label>Task Name</Form.Label>
+            <Form.Control 
+            required
+            type="text" 
+            placeholder="Enter your task name" 
+            name='taskName'/>
+          </Form.Group>
         </Modal.Header>
         
-        
+
+         {/*  date   */}
+
+
         <Modal.Body>
-            I will not close if you click outside me. Do not even try to press
-            escape key.
+          <Form.Group className="mb-3" controlId="formTaskDeadline">
+            <Form.Label>Task Deadline</Form.Label>
+            <Form.Control 
+            required
+            type="date" 
+            placeholder="Enter your task deadline"
+            name='taskDadline'/>
+          </Form.Group>
+
+
+         {/*  task   */}
+
+
+          <Form.Group className="mb-3" controlId="formTaskDescription">
+            <Form.Label>Task Description</Form.Label>
+            <Form.Control 
+            required
+            type="text" 
+            placeholder="Enter your task description" 
+            name='taskDescription'
+            as="textarea" 
+            rows={3}/>
+          </Form.Group>
         </Modal.Body>
+
+
+        </Form>
         
         
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="primary">Understood</Button>
+          <Button variant="success">Create <MdDone /> </Button>
         </Modal.Footer>
       </Modal>
     </>
