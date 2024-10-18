@@ -6,15 +6,31 @@ import { useState } from 'react';
 function App() {
 
   const [show, setShow] = useState(false);
-
   const handleClose = () => { setShow(false) }
   const handleShow = () => { setShow(true) }
   
+
+
+  const [tasks, setTask] = useState([]);
+
+  const addTask = (taskName, taskDadline, taskDescription) => { 
+    setTask([
+        ...tasks,
+      {
+        'taskName':taskName,
+        'taskDadline':taskDadline,
+        'taskDescription':taskDescription
+      }
+    ]) 
+  }
+
+
+
   return (
     <>
       <Header openModal={handleShow}/>
-      <TasksWrapper/>
-      <TaskModal show={show} handleClose={handleClose}/>
+      <TasksWrapper tasks={tasks}/>
+      <TaskModal show={show} closeModal={handleClose} createTask={addTask} openModal={handleShow}/>
     </>
   );
 }
