@@ -10,7 +10,7 @@ function TasksWrapper({tasks}) {
       <section className='my-5 w-full my-5 d-flex  flex-wrap gap-2 aligm-items-center'>
       {
         tasks.length ? 
-        tasks.map (task => <Task taskName={task.taskName} taskDeadline={task.taskDeadline} taskDescription={task.taskDescription}/>)
+        tasks.map (task => <Task taskName={task.taskName} taskDeadline={task.taskDeadline} taskDescription={task.taskDescription} taskId = {task.taskId}/>)
         : <TasksEmptyList />
       }
       </section>
